@@ -174,5 +174,7 @@ Most result figures are saved in reports/figures/.
 ## Citation
 
 Abramovich O, Pizem H, Fhima J, Berkowitz E, Gofrit B, Meisel M, et al. (2025). Hillel Yaffe Glaucoma Dataset (HYGD) (version 1.0.0). PhysioNet. https://doi.org/10.13026/*****.
+
 Abramovich O, Pizem H, Fhima J, Berkowitz E, Gofrit B, Meisel M, et al. GONet: A Generalizable Deep Learning Model for Glaucoma Detection [Internet]. arXiv.org. 2025.
+
 Abramovich O, Pizem H, Eijgen JV, Oren I, Melamed J, Stalmans I, et al. FundusQ-Net: A regression quality assessment deep learning algorithm for fundus images quality grading. Comput Methods Programs Biomed. 2023;239:Art. no. 107522.
