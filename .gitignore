@@ -1,13 +1,49 @@
-/data/raw/ 
-/data/processed/ 
-*.pth 
-*.h5 
-*.pt 
-__pycache__/ 
-*.pyc 
-.ipynb_checkpoints/ 
-venv/ 
-env/ 
-.env 
-.vscode/ 
-.idea/ 
+# DATA
+/data/raw/
+/data/processed/
+
+# MODEL ARTIFACTS
+# Ignore all intermediate checkpoints
+checkpoints/
+*.pth
+*.pt
+*.h5
+
+# Allow ONE final model for reproducibility
+!models/augmented_glaucoma_resnet18.pth
+
+# TRAINING OUTPUTS
+runs/
+logs/
+outputs/
+*.log
+
+# Grad-CAM outputs
+heatmaps/
+
+# EXPERIMENT TRACKING
+wandb/
+mlruns/
+
+# PYTHON CACHE
+__pycache__/
+*.pyc
+
+# JUPYTER
+.ipynb_checkpoints/
+
+# ENVIRONMENT / SECRETS
+venv/
+env/
+.env
+
+# Keep template for reproducibility
+!.env.example
+
+# IDE SETTINGS
+.vscode/
+.idea/
+
+# OS FILES
+.DS_Store
+Thumbs.db
