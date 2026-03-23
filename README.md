@@ -14,11 +14,11 @@ Three architectures were trained and evaluated on the same preprocessed dataset 
 
 Final test set results:
 
-| Model                     | Threshold | Accuracy | Recall   | Precision | F1-score | AUC-ROC | Sensitivity | Specificity | Chosen? | Main Reason / Trade-off                                      |
-|---------------------------|-----------|----------|----------|-----------|----------|---------|-------------|-------------|---------|----------------------------------------------------------------|
-| ResNet18 (selected + aug) | 0.6208    | 0.9583   | **0.9783** | 0.9837    | 0.9810   | **0.9797** | 0.9783      | 0.9231      | **Yes** | Highest recall + very strong AUC. Best balance of performance, training speed, and interpretability (Grad-CAM focuses on optic disc/cup/rim). Chosen as final model. |
-| EfficientNet-B0           | 0.4000    | 0.9452   | 0.9216   | 1.0000    | 0.9592   | 0.9885  | 0.9216      | **1.0000**  | No      | Excellent specificity & AUC, but noticeably lower recall → higher risk of missing glaucoma cases (critical in screening). |
-| ResNet50                  | 0.5205    | 0.9452   | 0.9783   | 0.9574    | 0.9677   | 0.9753  | 0.9783      | 0.8846      | No      | Very high recall (same as ResNet18), but lower specificity and AUC compared to ResNet18. Larger model → longer training. |
+| Model                     | Threshold | Accuracy | Recall   | Precision | F1-score | AUC-ROC | Sensitivity | Specificity | Chosen? |
+|---------------------------|-----------|----------|----------|-----------|----------|---------|-------------|-------------|---------|
+| ResNet18 (selected + aug) | 0.6208    | 0.9583   | **0.9783** | 0.9837    | 0.9810   | **0.9797** | 0.9783      | 0.9231      | **Yes** |
+| EfficientNet-B0           | 0.4000    | 0.9452   | 0.9216   | 1.0000    | 0.9592   | 0.9885  | 0.9216      | **1.0000**  | No      | 
+| ResNet50                  | 0.5205    | 0.9452   | 0.9783   | 0.9574    | 0.9677   | 0.9753  | 0.9783      | 0.8846      | No      | 
 
 **Key observations:**
 - **ResNet18 (augmented)** achieves the best **recall (0.9783)** — most important metric for glaucoma screening (minimize false negatives / missed cases).
@@ -48,7 +48,7 @@ team108_idsc2026/
 │   └── test/                          # prediction CSVs
 │       ├── test_predictions_resnet18.csv
 │       └── (other model predictions…)
-├── src/                         # reusable code (currently minimal)
+├── src/
 ├── .gitignore
 ├── LICENSE.txt
 ├── README.md
