@@ -167,6 +167,7 @@ Most result figures are saved in reports/figures/.
 * Lee Pei En
 * Lee Zhi Ying
 * Sim Yu Yin
+* Yah Tian Ling
 
 <br>
 
