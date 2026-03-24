@@ -165,7 +165,7 @@ Most result figures are saved in reports/figures/.
 ## 👥 Authors
 
 * Lee Pei En
-* Lee Zhi Ying
+* Ng Zhi Ying
 * Sim Yu Yin
 * Yah Tian Ling
 
