@@ -110,7 +110,7 @@ team108_idsc2026/
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/Peienlee/team108_idcs2026.git
+git clone https://github.com/Peienlee/team108_idsc2026.git
 cd <your-project-folder>
 ```
 
