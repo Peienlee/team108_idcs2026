@@ -4,7 +4,7 @@
 
 Binary classification model (Normal vs Glaucoma) using **ResNet18** trained on preprocessed retinal fundus photographs.  
 The project emphasizes **high recall** — critical for screening to minimize missed glaucoma cases.
-Grad-CAM visualizations show the model focuses primarily on the **optic disc**, **optic cup**, and **neuroretinal rim** — clinically relevant regions.
+Grad-CAM visualizations show the model focuses primarily on the **optic disc**, **optic cup**, and **neuroretinal rim** — clinically relevant regions. 
 
 <br>
 
